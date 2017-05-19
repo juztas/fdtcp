@@ -4,7 +4,7 @@
 # see fdtd.conf, resp. fdtcp.conf for details (command template, arguments)
 
 # this target-system configuration file
-source /etc/fdtcp/fdtd-system-conf.sh
+. /etc/fdtcp/fdtd-system-conf.sh
 
 inputCommand=`eval echo $@`
 echo env

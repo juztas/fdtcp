@@ -4,7 +4,7 @@
 # FDT Java is run via sudo
 
 # this target-system configuration file
-source /etc/fdtcp/fdtd-system-conf.sh
+. /etc/fdtcp/fdtd-system-conf.sh
 
 # fdtd.conf defines templates for both FDT client, server commands which
 # are executed via this script

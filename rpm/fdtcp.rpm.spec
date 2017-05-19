@@ -2,12 +2,12 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 
 Name:           fdtcp
-Version:        0.5
+Version:        0.25
 Release:        1%{?dist}
 Summary:        client/server tools for running persistent fdt services
 
 Group:          System Environment/Daemons
-License:        Caltech
+License:        ASL 2.0
 URL:            https://twiki.cern.ch/twiki/bin/view/Main/PhEDExFDTIntegration
 Source0:        https://github.com/cmscaltech/fdtcp/archive/%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -117,3 +117,4 @@ fi
 %{_initrddir}/fdtd
 %attr(-,fdt,fdt) %{_var}/log/fdtd
 %attr(-,fdt,fdt) %{_var}/run/fdtd
+
